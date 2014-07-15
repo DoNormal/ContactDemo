@@ -2,11 +2,11 @@
 
 <div class="field field-required">
     @Html.LabelFor(model => model.Name, ContactText.Contact_Name)
-    @Html.TextBoxFor(model => model.Name)@*, new { requireed = "required" }*@
+    @Html.TextBoxFor(model => model.Name, new { required = "required" }) 
 </div>
 <div class="field field-required">
     @Html.LabelFor(model => model.EmailAddress, ContactText.Contact_EmailAddress)
-    @Html.TextBoxFor(model => model.EmailAddress)@*, new { type = "email", required = "required" }*@
+    @Html.TextBoxFor(model => model.EmailAddress, new { type = "email", required = "required" })
 </div>
 <div class="field field-required">
     @Html.Label("Attachment", ContactText.Contact_Attachment)
