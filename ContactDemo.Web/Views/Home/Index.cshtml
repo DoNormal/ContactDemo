@@ -1,0 +1,17 @@
+﻿@model PostContact
+@{
+    ViewBag.Title = ContactText.Index_Title;
+}
+
+@Html.ConfirmationNotice("Done", ContactText.Index_DoneNotice, new { @class = "confirmation" })
+
+<h1>@ContactText.Index_H1</h1>
+<form class="form" action="@Url.Home()" method="post" enctype="multipart/form-data">
+    @Html.ValidationSummary(ContactText.Index_ValidationSummary)
+    @Html.EditorForModel()
+    @Html.AntiForgeryToken()
+    
+    <div class="form-actions">
+        <button class="button form-button" type="submit">@ContactText.Index_Button</button>
+    </div>
+</form>

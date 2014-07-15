@@ -1,0 +1,43 @@
+﻿
+/* General layout
+ * ========================================================================== */
+body { padding-top: 3rem; background-color: #eaeaea; color: #333; }
+.main { padding: 1rem; background-color: #fff; border-radius: 10px; }
+h1 { margin-top: 0; }
+
+/* General layout: responsive */
+@media screen and (min-width: 720px) {
+    .main { margin: 0 auto; max-width: 800px; }
+}
+
+
+
+/* Form layout
+ * ========================================================================== */
+
+/* Regular form fields */
+.field { margin-bottom: 1.5rem; }
+label { display: block; margin-bottom: 0.25rem; font-weight: bold; }
+input[type="text"],
+input[type="email"] { padding: 0.25rem; border-radius: 3px; border-width: 1px; border-style: solid; border-color: #c7c7c7; box-shadow: inset 2px 2px 5px 0 #eaeaea; }
+input[type="text"]:focus,
+input[type="email"]:focus { border-color: #9d9d9d; }
+
+/* Form actions */
+.form-actions { margin-top: 1rem; padding-top: 1rem; border-width: 1px 0 0 0; border-style: solid; border-color: #eaeaea; }
+
+/* Button */
+.form-button { padding: 0.5rem; background-color: #45da88; color: #fff; font-weight: bold; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); text-transform: uppercase; border-width: 1px; border-style: solid; border-color: #77a255; border-radius: 3px; }
+
+/* Form validation */
+.field-validation-error { color: #ff5454; }
+.field-validation-valid { display: none; }
+input[type="text"].input-validation-error,
+input[type="email"].input-validation-error { border: 1px solid #ff5454; background-color: #fad8d8; text-shadow: none; }
+.validation-summary-errors { padding: 0.5rem; font-weight: bold; color: #fff3f3; background-color: #ff5454; border-width: 0 0 0 5px; border-style: solid; border-color: #d24545; }
+.validation-summary-valid { display: none; }
+
+
+/* Confirmation message
+ * ========================================================================== */
+.confirmation { margin-bottom: 2rem; padding: 0.5rem; background-color: #45da88; border-width: 0 0 0 5px; border-style: solid; border-color: #60b084; color: #fff; font-weight: bold; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }

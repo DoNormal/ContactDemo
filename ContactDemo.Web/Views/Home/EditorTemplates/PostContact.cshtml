@@ -1,0 +1,14 @@
+﻿@model PostContact
+
+<div class="field field-required">
+    @Html.LabelFor(model => model.Name, ContactText.Contact_Name)
+    @Html.TextBoxFor(model => model.Name)@*, new { requireed = "required" }*@
+</div>
+<div class="field field-required">
+    @Html.LabelFor(model => model.EmailAddress, ContactText.Contact_EmailAddress)
+    @Html.TextBoxFor(model => model.EmailAddress)@*, new { type = "email", required = "required" }*@
+</div>
+<div class="field field-required">
+    @Html.Label("Attachment", ContactText.Contact_Attachment)
+    <input type="file" accept="image/*" name="Attachment" />
+</div>
