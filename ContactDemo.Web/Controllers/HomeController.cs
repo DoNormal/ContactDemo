@@ -29,9 +29,9 @@ namespace ContactDemo.Web.Controllers
         }
 
         /// <summary>
-        /// 
+        /// Displays the contact form.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>A view result.</returns>
         [HttpGet]
         public ActionResult Index()
         {
